@@ -26,5 +26,14 @@ def task4(name):
     }
     return js
 
+@app.route('/ind',methods=['GET','POST'])
+def input():
+  #if request.method=="POST":
+  detail=request.form
+  i=detail['stt']
+    #j=detail['states']
+  print(i)
+  return "success"
+
 if __name__=="__main__":
     app.run(debug=True)
