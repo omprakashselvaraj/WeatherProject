@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="cities.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <form action="127.0.0.1:5000/ind" method="POST">
+        <select onchange="print_city('state', this.selectedIndex);" id="sts" name ="stt" class="form-control" required></select>
+        <select id ="state" class="form-control" required></select>
+        <script language="javascript">print_state("sts");</script><br>
+        <input type='submit' value="SUBMIT">
+    </form>
+</body>
+</html>
